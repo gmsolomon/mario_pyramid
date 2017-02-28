@@ -1,5 +1,5 @@
 
-printPyramid(5);
+printPyramid(8);
 
 
 /*
@@ -19,5 +19,16 @@ function printPyramid(height) {
 
     // TODO
     // print that pyramid!
+    for (var row = 0; row < height; row++){
+        string ="#";
+        for (var column = 0; column < height; column ++ ){
+            if ( column <= row){
+                string += "#";
+            } else {
+                string = " " + string;
+                }
+        }
+        console.log(string)
+    }
 
 }
